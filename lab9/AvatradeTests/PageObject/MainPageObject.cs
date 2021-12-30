@@ -11,6 +11,8 @@ namespace AvatradeTests.PageObject
     {
         private IWebDriver _webDriver;
         private By EntranceBtn = By.XPath("//a[@class = 'button-main ln-auto stroke-white']");
+       
+
         public MainPageObject(IWebDriver webDriver)
         {
             _webDriver = webDriver;

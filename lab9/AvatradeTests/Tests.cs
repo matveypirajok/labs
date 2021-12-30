@@ -15,6 +15,7 @@ namespace AvatradeTests
 
         private const string TestEmail = "testikiepamuch@gmail.com";
         private const string TestPassword = "12@3123123Gg";
+        private const string Element = "EUR/USD";
 
         [SetUp]
         public void StartPageSetup()
@@ -27,7 +28,14 @@ namespace AvatradeTests
         public void Login()
         {
             var main = new MainPageObject(_driver);
-            main.Entrance().Login(TestEmail, TestPassword).TradeTest();
+            main.Entrance()
+                .Login(TestEmail, TestPassword)
+                .TradeTest();
+
+            string EUR = new PortfolioPage(_driver)
+                .SearchEur();
+            Assert.AreEqual(Element, EUR);
+
         }
 
         [TearDown]
