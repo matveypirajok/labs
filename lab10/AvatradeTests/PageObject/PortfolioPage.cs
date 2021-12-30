@@ -7,17 +7,13 @@ using System.Threading.Tasks;
 
 namespace AvatradeTests.PageObject
 {
-    public class PortfolioPage
+    public class PortfolioPage : BasePage
     {
-        public IWebDriver webdriver;
-        public PortfolioPage(IWebDriver driver)
-        {
-            webdriver = driver;
-        }
+        public PortfolioPage(IWebDriver driver) : base(driver) { }
         public string SearchEur()
         {
             System.Threading.Thread.Sleep(1000);
-            return webdriver.FindElement(By.XPath("//div[text()=' EUR/USD ']")).Text;
+            return driver.FindElement(By.XPath("//div[text()=' EUR/USD ']")).Text;
         }
     }
 }

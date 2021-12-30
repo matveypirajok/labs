@@ -10,7 +10,7 @@ namespace AvatradeTests.Utils
 {
     class Log
     {
-        static string pathLogs = "../../../Logs/YahooFinance.log";
+        static string pathLogs = "../../../Logs/Capitallog.log";
         static string pathDirectoryLogs = "../../../Logs";
         static Log()
         {

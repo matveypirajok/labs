@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8HQ4tKlQY7tmtaphsHJtnJruORcwVV+KS1SvoD7ioQ22NirxF5qNVdvdnGfLrOPsb9JvyPPaHw1T9kJOwbHqgg==",
+  "dgSpecHash": "awFdFLs+7QrQLnKAFmZNJQjsC9QifOJ5HINdbaSi+Ay2zkngjCQAPhH59RJpRCieNfnfxcvovEwWsDtpQn1+ZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\matvey\\Desktop\\labs\\lab10\\AvatradeTests\\AvatradeTests.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,8 @@
     "C:\\Users\\matvey\\.nuget\\packages\\selenium.support\\4.0.1\\selenium.support.4.0.1.nupkg.sha512",
     "C:\\Users\\matvey\\.nuget\\packages\\selenium.webdriver\\4.0.1\\selenium.webdriver.4.0.1.nupkg.sha512",
     "C:\\Users\\matvey\\.nuget\\packages\\selenium.webdriver.chromedriver\\95.0.4638.5401\\selenium.webdriver.chromedriver.95.0.4638.5401.nupkg.sha512",
+    "C:\\Users\\matvey\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\matvey\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\matvey\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\matvey\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\matvey\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",

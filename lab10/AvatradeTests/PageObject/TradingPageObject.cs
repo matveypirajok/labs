@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace AvatradeTests.PageObject
 {
-    public class TradingPageObject
+    public class TradingPageObject : BasePage
     {
-        private IWebDriver _webDriver;
         private By SearchItem = By.XPath("//div[text()='EUR/USD']");
         private By AddItem = By.XPath("//button[@class='button-outlined button-outlined--small']");
         private By Confirm = By.XPath("/html/body/app-root/div/left-side-panel/div[1]/div/div[2]/trade-view/trade-side-panel/div/div/div[3]/trade-deal-ticket/place-order/div/div/button");
@@ -19,36 +18,33 @@ namespace AvatradeTests.PageObject
         private By inputCountEUR = By.XPath("/html/body/app-root/div/left-side-panel/div[1]/div/div[2]/trade-view/trade-side-panel/div/div/div[3]/trade-deal-ticket/place-order/div/scroll-pane/div[1]/div[1]/input-number2/div/input");//очитска поля с количеством clear
         private By buttonPortf = By.XPath("/html/body/app-root/div/left-side-panel/div[2]/floating-left-panel/div[1]/div[4]"); //переход в портфолио
         private By searchEUR = By.XPath("//div[text()=' EUR/USD ']"); // поиск для ассерта
-        
-        public TradingPageObject(IWebDriver webDriver)
-        {
-            _webDriver = webDriver;
-        }
+
+        public TradingPageObject(IWebDriver webDriver) : base(webDriver) { }
         public PortfolioPage TradeTest()
         {
             System.Threading.Thread.Sleep(10000);
-            _webDriver.FindElement(AccountClick).Click();
+            driver.FindElement(AccountClick).Click();
 
-            _webDriver.FindElement(DemoClick).Click();
+            driver.FindElement(DemoClick).Click();
 
             System.Threading.Thread.Sleep(7000);
-            _webDriver.FindElement(SearchItem).Click();
+            driver.FindElement(SearchItem).Click();
 
             System.Threading.Thread.Sleep(1000);
 
-            _webDriver.FindElement(AddItem).Click();
+            driver.FindElement(AddItem).Click();
             System.Threading.Thread.Sleep(1000);
 
-            _webDriver.FindElement(inputCountEUR).Clear();
+            driver.FindElement(inputCountEUR).Clear();
 
 
             System.Threading.Thread.Sleep(3000);
-            _webDriver.FindElement(Confirm).Click();
+            driver.FindElement(Confirm).Click();
 
             System.Threading.Thread.Sleep(1000);
-            _webDriver.FindElement(buttonPortf).Click();
+            driver.FindElement(buttonPortf).Click();
 
-            return new PortfolioPage(_webDriver);
+            return new PortfolioPage(driver);
         }
     }
 }
